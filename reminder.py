@@ -111,6 +111,7 @@ def remove(task: str):
 @click.argument("task")
 def done(task: str):
     """Mark a task as done in reminders."""
+    """test"""
     task_list = _get_task_list()
     target = _find_task(task, task_list)
     if target is not None:
